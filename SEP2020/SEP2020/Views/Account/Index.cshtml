@@ -1,0 +1,95 @@
+﻿@model IEnumerable<SEP2020.Models.Account>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">Danh Sách Tài Khoản</h2>
+
+<p>
+    @Html.ActionLink("Tạo mới +", "Create")
+</p>
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fa fa-table"></i> Danh sách Tài khoản
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="demoGrid" 5 cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Họ tên</th>
+                        <th>Quyền</th>
+                        <th>Kích hoạt</th>
+                        <th>Mã MS</th>
+                        <th>Mail</th>
+                        <th>Chức danh</th>
+                        <th>Mã GV</th>
+                        <th>Trình độ</th>
+                        <th>Khoa</th>
+                        <th></th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            @using (Html.BeginForm("UpdateRole", "Account"))
+                            {
+                                <td>
+                                    @Html.DropDownList("Role", new List<SelectListItem>
+            {
+            new SelectListItem { Text = "Admin", Value = "admin", Selected=(item.Role.Equals("admin"))},
+            new SelectListItem { Text = "User", Value = "user",Selected=(item.Role.Equals("user"))}
+            },
+           new
+           {
+               @class = "form-control",
+               onchange = "this.form.submit();"
+           }
+     )
+                                    @Html.Hidden("id", item.id)
+                                </td>
+                            }
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Check_active)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ms_id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Email)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Teaching_Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Lecture_Code)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Degree)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Faculty.Name)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Sửa", "Edit", new { id = item.id }) 
+                                @Html.ActionLink("Xóa", "Delete", new { id = item.id })
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

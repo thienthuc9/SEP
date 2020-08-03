@@ -1,0 +1,332 @@
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\ApplicationInsights.config
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\roslyn\csc.exe
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\roslyn\System.Collections.Immutable.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\roslyn\vbc.exe
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\roslyn\VBCSCompiler.exe
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\roslyn\VBCSCompiler.exe.config
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\SEP2020.dll.config
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\SEP2020.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\SEP2020.pdb
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Antlr3.Runtime.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\EntityFramework.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\EntityFramework.SqlServer.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AI.Web.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AI.WindowsServer.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.ApplicationInsights.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Google.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Web.Infrastructure.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Newtonsoft.Json.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Owin.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.Helpers.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.Mvc.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.Optimization.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.Razor.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.WebPages.Deployment.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.WebPages.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.WebPages.Razor.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\WebGrease.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AI.Web.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AI.WindowsServer.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.ApplicationInsights.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.Helpers.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.Mvc.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.Optimization.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.Razor.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.WebPages.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.WebPages.Deployment.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\System.Web.WebPages.Razor.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Antlr3.Runtime.pdb
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Newtonsoft.Json.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\EntityFramework.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\EntityFramework.SqlServer.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Google.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\obj\Debug\SEP2020.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\obj\Debug\SEP2020.dll
+c:\users\admin\documents\visual studio 2015\Projects\SEP2020\SEP2020\obj\Debug\SEP2020.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\SEP2020\SEP2020\bin\Microsoft.Owin.Security.VanLang.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\ApplicationInsights.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\roslyn\csc.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\roslyn\vbc.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\SEP2020.dll.config
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\SEP2020.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\SEP2020.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Antlr3.Runtime.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\EntityFramework.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.Web.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.VanLang.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Newtonsoft.Json.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Owin.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.Helpers.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.Mvc.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.Optimization.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.Razor.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.WebPages.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.WebPages.Razor.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\WebGrease.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\EntityFramework.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.Web.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.Helpers.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.Mvc.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.Optimization.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.Razor.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.WebPages.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\System.Web.WebPages.Razor.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Antlr3.Runtime.pdb
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Newtonsoft.Json.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\obj\Debug\SEP2020.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\obj\Debug\SEP2020.dll
+C:\Users\Admin\Documents\Visual Studio 2015\Projects\news\SEP2020\SEP2020\SEP2020\obj\Debug\SEP2020.pdb
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\ApplicationInsights.config
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\roslyn\csc.exe
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\roslyn\System.Collections.Immutable.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\roslyn\System.Reflection.Metadata.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\roslyn\vbc.exe
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\roslyn\VBCSCompiler.exe
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\roslyn\VBCSCompiler.exe.config
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\SEP2020.dll.config
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\SEP2020.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\SEP2020.pdb
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Antlr3.Runtime.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\EntityFramework.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\EntityFramework.SqlServer.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.Agent.Intercept.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.DependencyCollector.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.Web.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.WindowsServer.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.ApplicationInsights.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Core.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Cookies.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Facebook.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Google.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.OAuth.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Twitter.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.VanLang.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Web.Infrastructure.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Newtonsoft.Json.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Owin.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.Helpers.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.Mvc.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.Optimization.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.Razor.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.WebPages.Deployment.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.WebPages.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.WebPages.Razor.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\WebGrease.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\EntityFramework.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\EntityFramework.SqlServer.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.DependencyCollector.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.Web.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AI.WindowsServer.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.ApplicationInsights.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.Helpers.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.Mvc.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.Optimization.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.Razor.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.WebPages.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.WebPages.Deployment.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\System.Web.WebPages.Razor.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Antlr3.Runtime.pdb
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Newtonsoft.Json.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Core.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Facebook.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Cookies.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.OAuth.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Google.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Twitter.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\SEP2020\SEP2020\SEP2020\SEP2020\obj\Debug\SEP2020.csprojResolveAssemblyReference.cache
+D:\SEP2020\SEP2020\SEP2020\SEP2020\obj\Debug\SEP2020.dll
+D:\SEP2020\SEP2020\SEP2020\SEP2020\obj\Debug\SEP2020.pdb
+D:\Do an\SEP2020\SEP2020\bin\ApplicationInsights.config
+D:\Do an\SEP2020\SEP2020\bin\roslyn\csc.exe
+D:\Do an\SEP2020\SEP2020\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Do an\SEP2020\SEP2020\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Do an\SEP2020\SEP2020\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Do an\SEP2020\SEP2020\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Do an\SEP2020\SEP2020\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Do an\SEP2020\SEP2020\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Do an\SEP2020\SEP2020\bin\roslyn\System.Collections.Immutable.dll
+D:\Do an\SEP2020\SEP2020\bin\roslyn\System.Reflection.Metadata.dll
+D:\Do an\SEP2020\SEP2020\bin\roslyn\vbc.exe
+D:\Do an\SEP2020\SEP2020\bin\roslyn\VBCSCompiler.exe
+D:\Do an\SEP2020\SEP2020\bin\roslyn\VBCSCompiler.exe.config
+D:\Do an\SEP2020\SEP2020\bin\SEP2020.dll.config
+D:\Do an\SEP2020\SEP2020\bin\SEP2020.dll
+D:\Do an\SEP2020\SEP2020\bin\SEP2020.pdb
+D:\Do an\SEP2020\SEP2020\bin\Antlr3.Runtime.dll
+D:\Do an\SEP2020\SEP2020\bin\EntityFramework.dll
+D:\Do an\SEP2020\SEP2020\bin\EntityFramework.SqlServer.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AI.DependencyCollector.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AI.Web.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AI.WindowsServer.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.ApplicationInsights.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Google.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.VanLang.dll
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Web.Infrastructure.dll
+D:\Do an\SEP2020\SEP2020\bin\Newtonsoft.Json.dll
+D:\Do an\SEP2020\SEP2020\bin\Owin.dll
+D:\Do an\SEP2020\SEP2020\bin\System.Web.Helpers.dll
+D:\Do an\SEP2020\SEP2020\bin\System.Web.Mvc.dll
+D:\Do an\SEP2020\SEP2020\bin\System.Web.Optimization.dll
+D:\Do an\SEP2020\SEP2020\bin\System.Web.Razor.dll
+D:\Do an\SEP2020\SEP2020\bin\System.Web.WebPages.Deployment.dll
+D:\Do an\SEP2020\SEP2020\bin\System.Web.WebPages.dll
+D:\Do an\SEP2020\SEP2020\bin\System.Web.WebPages.Razor.dll
+D:\Do an\SEP2020\SEP2020\bin\WebGrease.dll
+D:\Do an\SEP2020\SEP2020\bin\EntityFramework.xml
+D:\Do an\SEP2020\SEP2020\bin\EntityFramework.SqlServer.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AI.DependencyCollector.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AI.Web.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AI.WindowsServer.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.ApplicationInsights.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.xml
+D:\Do an\SEP2020\SEP2020\bin\System.Web.Helpers.xml
+D:\Do an\SEP2020\SEP2020\bin\System.Web.Mvc.xml
+D:\Do an\SEP2020\SEP2020\bin\System.Web.Optimization.xml
+D:\Do an\SEP2020\SEP2020\bin\System.Web.Razor.xml
+D:\Do an\SEP2020\SEP2020\bin\System.Web.WebPages.xml
+D:\Do an\SEP2020\SEP2020\bin\System.Web.WebPages.Deployment.xml
+D:\Do an\SEP2020\SEP2020\bin\System.Web.WebPages.Razor.xml
+D:\Do an\SEP2020\SEP2020\bin\Antlr3.Runtime.pdb
+D:\Do an\SEP2020\SEP2020\bin\Newtonsoft.Json.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Google.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Do an\SEP2020\SEP2020\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Do an\SEP2020\SEP2020\obj\Debug\SEP2020.csprojResolveAssemblyReference.cache
+D:\Do an\SEP2020\SEP2020\obj\Debug\SEP2020.dll
+D:\Do an\SEP2020\SEP2020\obj\Debug\SEP2020.pdb

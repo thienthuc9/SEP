@@ -1,0 +1,65 @@
+﻿@model IEnumerable<SEP2020.Models.Semester>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">HỌC KÌ</h2>
+
+<p>
+    @Html.ActionLink("+ Thêm mới Học Kì", "Create")
+</p>
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fa fa-table"></i> Danh sách Học kì
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="demoGrid" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>HỌC KÌ</th>
+                        <th>NGÀY BẮT ĐẦU</th>
+                        <th>NGÀY KẾT THÚC</th>
+                        <th>THAO TÁC</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.namesemester)
+                            </td>
+                            <td>
+                              @*@Html.DisplayFor(modelItem => item.start_date)*@
+                                @item.start_date.Value.ToString("dd/MM/yyyy")
+                            </td>
+                            <td>
+                                @*@Html.DisplayFor(modelItem => item.end_date)*@
+                                @item.end_date.Value.ToString("dd/MM/yyyy")
+                                @*@Html.DisplayFor(modelItem => item.end_date,new { htmlAttributes = new { @type = "date" } })*@
+                            
+                            </td>
+                            @*<td>
+                                    @Html.DisplayFor(modelItem => item.id_FKAccount)
+                                </td>*@
+                            <td>
+                                @Html.ActionLink("Sửa", "Edit", new { id = item.id_semester }) 
+
+                                @Html.ActionLink("Xóa", "Delete", new { id = item.id_semester })
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6736276c8b484e5db1e27a6d9c955a72" Name="Diagram1">
+        <EntityTypeShape EntityType="SEP2020Model.Account" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="SEP2020Model.Faculty" Width="1.5" PointX="0.75" PointY="1.5" />
+        <EntityTypeShape EntityType="SEP2020Model.Semester" Width="1.5" PointX="6.5" PointY="1.125" />
+        <EntityTypeShape EntityType="SEP2020Model.sysdiagram" Width="1.5" PointX="2.75" PointY="4.75" />
+        <AssociationConnector Association="SEP2020Model.FK_Account_Faculty" />
+        <EntityTypeShape EntityType="SEP2020Model.ResearchCategory" Width="1.5" PointX="5.75" PointY="4.75" />
+        <EntityTypeShape EntityType="SEP2020Model.RearchItem" Width="1.5" PointX="8" PointY="4.375" />
+        <AssociationConnector Association="SEP2020Model.FK_RearchItem_ResearchCategory" />
+        <EntityTypeShape EntityType="SEP2020Model.Article" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="SEP2020Model.Research" Width="1.5" PointX="11.25" PointY="2.5" />
+        <AssociationConnector Association="SEP2020Model.FK_Research_Account" />
+        <AssociationConnector Association="SEP2020Model.FK_Research_RearchItem" />
+        <AssociationConnector Association="SEP2020Model.FK_Research_Semester" />
+        <EntityTypeShape EntityType="SEP2020Model.TK_Danhmuc" Width="1.5" PointX="7.375" PointY="8.5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

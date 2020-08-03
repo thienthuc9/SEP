@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SEP2020Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Role" Type="varchar" MaxLength="50" />
+    <Property Name="Check_active" Type="varchar" MaxLength="50" />
+    <Property Name="ms_id" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Teaching_Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Lecture_Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Degree" Type="nvarchar" MaxLength="50" />
+    <Property Name="Falcuty_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="conten" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="date" Type="date" />
+    <Property Name="author" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="photo" Type="image" />
+    <Property Name="id_semester" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Faculty">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RearchItem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaNCKH" Type="nvarchar" MaxLength="50" />
+    <Property Name="CT" Type="nvarchar" MaxLength="200" />
+    <Property Name="unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="exchange" Type="int" />
+    <Property Name="about" Type="nvarchar" MaxLength="500" />
+    <Property Name="Category_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Research">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Explain" Type="nvarchar" MaxLength="500" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Note" Type="nvarchar" MaxLength="200" />
+    <Property Name="Semester_id" Type="int" Nullable="false" />
+    <Property Name="Item_id" Type="int" Nullable="false" />
+    <Property Name="Account_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ResearchCategory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ma" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Semester">
+    <Key>
+      <PropertyRef Name="id_semester" />
+    </Key>
+    <Property Name="id_semester" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="namesemester" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="start_date" Type="date" />
+    <Property Name="end_date" Type="date" />
+    <Property Name="Account_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'SEP2020.dbo.TK_Danhmuc' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TK_Danhmuc">
+    <Key>
+      <PropertyRef Name="namesemester" />
+      <PropertyRef Name="Semester_id" />
+      <PropertyRef Name="Item_id" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="namesemester" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Explain" Type="nvarchar" MaxLength="500" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Note" Type="nvarchar" MaxLength="200" />
+    <Property Name="Semester_id" Type="int" Nullable="false" />
+    <Property Name="Item_id" Type="int" Nullable="false" />
+    <Property Name="HovaTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaNCKH" Type="nvarchar" MaxLength="50" />
+    <Property Name="CT" Type="nvarchar" MaxLength="200" />
+    <Property Name="unit" Type="nvarchar" MaxLength="50" />
+    <Property Name="exchange" Type="int" />
+    <Property Name="about" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <Association Name="FK_Account_Faculty">
+    <End Role="Faculty" Type="Self.Faculty" Multiplicity="1" />
+    <End Role="Account" Type="Self.Account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faculty">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Account">
+        <PropertyRef Name="Falcuty_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RearchItem_ResearchCategory">
+    <End Role="ResearchCategory" Type="Self.ResearchCategory" Multiplicity="1" />
+    <End Role="RearchItem" Type="Self.RearchItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ResearchCategory">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="RearchItem">
+        <PropertyRef Name="Category_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Research_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="1" />
+    <End Role="Research" Type="Self.Research" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Research">
+        <PropertyRef Name="Account_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Research_RearchItem">
+    <End Role="RearchItem" Type="Self.RearchItem" Multiplicity="1" />
+    <End Role="Research" Type="Self.Research" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RearchItem">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Research">
+        <PropertyRef Name="Item_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Research_Semester">
+    <End Role="Semester" Type="Self.Semester" Multiplicity="1" />
+    <End Role="Research" Type="Self.Research" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Semester">
+        <PropertyRef Name="id_semester" />
+      </Principal>
+      <Dependent Role="Research">
+        <PropertyRef Name="Semester_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="SEP2020ModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Article" EntityType="Self.Article" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Faculty" EntityType="Self.Faculty" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RearchItem" EntityType="Self.RearchItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Research" EntityType="Self.Research" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ResearchCategory" EntityType="Self.ResearchCategory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Semester" EntityType="Self.Semester" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TK_Danhmuc" EntityType="Self.TK_Danhmuc" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TK_Danhmuc].[Name] AS [Name], 
+    [TK_Danhmuc].[namesemester] AS [namesemester], 
+    [TK_Danhmuc].[Explain] AS [Explain], 
+    [TK_Danhmuc].[Quantity] AS [Quantity], 
+    [TK_Danhmuc].[Note] AS [Note], 
+    [TK_Danhmuc].[Semester_id] AS [Semester_id], 
+    [TK_Danhmuc].[Item_id] AS [Item_id], 
+    [TK_Danhmuc].[HovaTen] AS [HovaTen], 
+    [TK_Danhmuc].[MaNCKH] AS [MaNCKH], 
+    [TK_Danhmuc].[CT] AS [CT], 
+    [TK_Danhmuc].[unit] AS [unit], 
+    [TK_Danhmuc].[exchange] AS [exchange], 
+    [TK_Danhmuc].[about] AS [about]
+    FROM [dbo].[TK_Danhmuc] AS [TK_Danhmuc]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Account_Faculty" Association="Self.FK_Account_Faculty">
+      <End Role="Faculty" EntitySet="Faculty" />
+      <End Role="Account" EntitySet="Account" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RearchItem_ResearchCategory" Association="Self.FK_RearchItem_ResearchCategory">
+      <End Role="ResearchCategory" EntitySet="ResearchCategory" />
+      <End Role="RearchItem" EntitySet="RearchItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Research_Account" Association="Self.FK_Research_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="Research" EntitySet="Research" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Research_RearchItem" Association="Self.FK_Research_RearchItem">
+      <End Role="RearchItem" EntitySet="RearchItem" />
+      <End Role="Research" EntitySet="Research" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Research_Semester" Association="Self.FK_Research_Semester">
+      <End Role="Semester" EntitySet="Semester" />
+      <End Role="Research" EntitySet="Research" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

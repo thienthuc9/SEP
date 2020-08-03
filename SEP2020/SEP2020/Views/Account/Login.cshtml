@@ -1,0 +1,25 @@
+﻿@using SEP2020.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+}
+
+<div class="row">
+    <div class="col-md-8">
+
+      
+            <img class="logovanglang" src="~/Img/45091015_281314895834007_3174315813423284224_n.png" width="500" height="200"/>
+
+           @*<h2 style="font-family: Ubuntu-Bold; color: #fff;font-size: 45px;font-weight: 900;margin-left:50px">
+              ĐĂNG NHẬP
+           </h2>*@
+            @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+           
+      
+    </div>
+    
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

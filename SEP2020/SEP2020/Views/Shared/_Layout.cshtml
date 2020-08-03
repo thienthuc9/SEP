@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Content/fontawesome-all.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Content/icon-font.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Content/animate.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Content/hamburgers.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Content/animsition.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Content/select2.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Content/daterangepicker.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Content/util.css" rel="stylesheet" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+   
+
+    
+    
+        <div class="container-login100" style="background-image: url('../../../../Img/1-1582158100730799166516.jpg'); ">
+            <div class="mausac"></div>
+
+            @Html.Partial("_LoginPartial")
+            @RenderBody()
+             
+        </div>
+   
+    
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <!--===============================================================================================-->
+    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/popper.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/moment.min.js"></script>
+    <script src="~/Scripts/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Scripts/main.js"></script>
+</body>
+</html>

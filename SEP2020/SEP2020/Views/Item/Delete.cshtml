@@ -1,0 +1,65 @@
+﻿@model SEP2020.Models.RearchItem
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">Xóa NCKH</h2>
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.unit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.unit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.exchange)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.exchange)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.about)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.about)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ResearchCategory.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResearchCategory.Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.Raw(TempData["msg"])
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-danger" /> <br />
+            @Html.ActionLink("Quay lại danh sách", "Index")
+        </div>
+    }
+</div>

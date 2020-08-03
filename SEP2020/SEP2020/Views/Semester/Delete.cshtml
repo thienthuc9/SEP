@@ -1,0 +1,55 @@
+﻿@model SEP2020.Models.Semester
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">Xóa Học Kì</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.namesemester)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.namesemester)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.start_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.start_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.end_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.end_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Account_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account_id)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.Raw(TempData["msg"])
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-danger" /> |
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>

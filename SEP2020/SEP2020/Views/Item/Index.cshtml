@@ -1,0 +1,78 @@
+﻿@model IEnumerable<SEP2020.Models.RearchItem>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">Danh sách NCKH</h2>
+
+<p>
+    @Html.ActionLink("+ Thêm mới ", "Create")
+</p>
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fa fa-table"></i> Danh sách NCKH
+    </div>
+    <div class="card-body" >
+        <div class="table-responsive">
+            <table class="table table-bordered" id="demoGrid" 5 cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Mã</th>
+                        <th>Danh mục NCKH</th>
+                        <th>Mã NCKH</th>
+                        <th>Nội dung công việc</th>
+                        <th>Đơn vị</th>
+                        <th>Quy đổi giờ chuẩn</th>
+                        <th>Ghi chú</th>
+                        <th>Thao tác</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ResearchCategory.Ma)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ResearchCategory.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MaNCKH)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CT)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.unit)
+
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.exchange)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.about)
+                            </td>
+                            @*<td>
+                                    @Html.DisplayFor(modelItem => item.id_FKAccount)
+                                </td>*@
+                            <td>
+                                @Html.ActionLink("Sửa", "Edit", new { id = item.id })
+
+                                @Html.ActionLink("Xóa", "Delete", new { id = item.id })
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+

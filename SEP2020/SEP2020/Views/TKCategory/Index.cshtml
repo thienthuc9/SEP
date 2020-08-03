@@ -1,0 +1,135 @@
+﻿@model IEnumerable<SEP2020.Models.Research>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">Thống Kê Theo Danh Mục NCKH</h2>
+
+
+@using (Html.BeginForm())
+{
+
+    <table style="margin-left:30px">
+        <tr>
+
+            <th>
+
+                @Html.DropDownList("Item_id", new SelectList(ViewBag.ResearchItem, "id", "ResearchCategory.Name"), "--Tất cả danh mục cần thống kê--")
+            </th>
+            <th style="padding-left: 15px;">
+                @Html.DropDownList("Semester_id", new SelectList(ViewBag.Semester, "id_semester", "namesemester"), "--Tất cả HK cần thống kê--")
+            </th>
+            <th>
+                <button style="margin-left: 10px;
+    padding: 9px 17px;" class="btn btn-outline-primary" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+
+            </th>
+        </tr>
+    </table>
+
+}
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fa fa-table"></i> Danh sách NCKH
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="demoGrid" 5 cellspacing="0">
+
+                <tr>
+
+                    <th rowspan="2">Mã GV</th>
+                    <th rowspan="2">Họ và Tên</th>
+                    <th rowspan="2">Chức danh</th>
+                    <th rowspan="2">Trình độ</th>
+                    <th style="text-align:center" colspan="3">NCKH</th>
+
+                    <th rowspan="2">Diễn giải</th>
+                    <th rowspan="2">Đơn vị (Bài đăng, Bài báo)</th>
+                  
+                    <th rowspan="2">Số lượng</th>
+
+                    <th rowspan="2">Quy đổi giờ chuẩn</th>
+                    <th rowspan="2">Ghi chú</th>
+                    <th rowspan="2">Đơn vị</th>
+                    <th rowspan="2">Học kì</th>
+
+
+
+
+                </tr>
+                <tr>
+                    <th>Mã NCKH</th>
+                    <th>Danh Muc</th>
+                    <th style="border-right: 1px solid #ddd">Chi tiết</th>
+                </tr>
+
+
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Account.Lecture_Code)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Account.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Account.Teaching_Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Account.Degree)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.RearchItem.MaNCKH)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.RearchItem.ResearchCategory.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.RearchItem.CT)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Explain)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.RearchItem.unit)
+                            </td>
+                            
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Quantity)
+                            </td>
+
+
+
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.RearchItem.exchange)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Note)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Account.Faculty.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Semester.namesemester)
+                            </td>
+
+
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

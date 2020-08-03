@@ -1,0 +1,97 @@
+﻿@model SEP2020.Models.Account
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">Xóa Tài khoản</h2>
+
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.Check_active)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Check_active)
+        </dd>*@
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.ms_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ms_id)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Teaching_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Teaching_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Lecture_Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Lecture_Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Degree)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Degree)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Faculty.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Faculty.Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.Raw(TempData["msg"])
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-danger" /> |
+            @Html.ActionLink("Quay lại", "Index")
+        </div>
+    }
+</div>

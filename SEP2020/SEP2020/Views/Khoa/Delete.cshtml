@@ -1,0 +1,33 @@
+﻿@model SEP2020.Models.Faculty
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">Xóa Khoa</h2>
+
+
+<div>
+    
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.Raw(TempData["msg"])        
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-danger" /> |
+            @Html.ActionLink("Quay lại danh sách", "Index")
+        </div>
+    }
+</div>

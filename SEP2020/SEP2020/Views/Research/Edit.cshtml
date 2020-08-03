@@ -1,0 +1,274 @@
+﻿@model SEP2020.Models.Research
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">Chỉnh Sửa Giờ NCKH</h2>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+      
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.id)
+
+      
+
+
+        <div class="form-group">
+            <p style="margin-left:19px">Học kì</p>
+            <div class="col-md-10">
+                @Html.DropDownList("Semester_id", new SelectList(ViewBag.Semester, "id_semester", "namesemester"))
+                @Html.ValidationMessageFor(model => model.Semester_id)
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <p style="margin-left:19px">Mã Giảng viên</p>
+            <div class="col-md-10">
+                @Html.DropDownList("Account_id", new SelectList(ViewBag.Account, "id", "Lecture_Code"), new { @id = "ma" })
+                @Html.ValidationMessageFor(model => model.Account_id)
+            </div>
+        </div>
+        <div class="form-group">
+            <p style="margin-left:19px">Tên Giảng viên</p>
+            <div class="col-md-10">
+                @Html.DropDownList("Account_id", new SelectList(ViewBag.Account, "id", "Name"), new { @id = "ten" })
+                @Html.ValidationMessageFor(model => model.Account_id)
+            </div>
+        </div>
+        @*<div class="form-group">
+            <p style="margin-left:19px">Chức danh giảng dạy</p>
+            <div class="col-md-10">
+                @Html.DropDownList("Account_id", new SelectList(ViewBag.Account, "id", "Teaching_Name"), new { @id = "tc" })
+                @Html.ValidationMessageFor(model => model.Account_id)
+            </div>
+        </div>*@
+        @*<div class="form-group">
+            <p style="margin-left:19px">Trình độ chuyên môn</p>
+            <div class="col-md-10">
+                @Html.DropDownList("Account_id", new SelectList(ViewBag.Account, "id", "Degree"), new { @id = "td" })
+                @Html.ValidationMessageFor(model => model.Account_id)
+            </div>
+        </div>*@
+        <div class="form-group">
+            <p style="margin-left:19px">Danh muc NCKJ</p>
+            <div class="col-md-10">
+                @Html.DropDownList("Item_id", new SelectList(ViewBag.ResearchItem, "id", "ResearchCategory.Name"), new { @id = "category" })
+                @Html.ValidationMessageFor(model => model.Item_id)
+            </div>
+        </div>
+        <div class="form-group">
+            <p style="margin-left:19px">Nội Dung NCKH</p>
+            <div class="col-md-10">
+                @Html.DropDownList("Item_id", new SelectList(ViewBag.ResearchItem, "id", "CT"), new { @id = "nd" })
+                @Html.ValidationMessageFor(model => model.Item_id)
+            </div>
+        </div>
+        <div class="form-group">
+            <p style="margin-left:19px">Mã NCKH</p>
+            <div class="col-md-10">
+                @Html.DropDownList("Item_id", new SelectList(ViewBag.ResearchItem, "id", "MaNCKH"), new { @id = "nckh", @disabled = "disabled" })
+                @Html.ValidationMessageFor(model => model.Item_id)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Explain, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Explain, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Explain, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <p style="margin-left:19px">Đơn vị(Đề tài,NCKH)</p>
+            <div class="col-md-10">
+                @Html.DropDownList("Item_id", new SelectList(ViewBag.ResearchItem, "id", "unit"), new { @id = "Item", @disabled = "disabled" })
+                @Html.ValidationMessageFor(model => model.Item_id)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-2">
+                @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <p style="margin-left:19px">Giờ chuẩn</p>
+            <div class="col-md-10">
+                @Html.DropDownList("Item_id", new SelectList(ViewBag.ResearchItem, "id", "exchange"), new { @id = "ex", @disabled = "disabled" })
+                @Html.ValidationMessageFor(model => model.Item_id)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Note, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Note, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Note, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+       
+
+      
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Lưu" class="btn btn-warning" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Quay trở lại", "Index")
+</div>
+@section scripts{
+   <script>
+       $(document).ready(function () {
+           $("#category").change(function () {
+               $.get("/Research/GetList/" + $("#category").val(), function (data) {
+                   if (data != null && data != undefined && data.length) {
+                       var html0 = '';
+                       $.each(data, function (key, item) {
+                           html0 += '<option value=' + item.id + '>' + item.CT + '</option>';
+                       });
+                       $("#nd").html(html0);
+                       var html0 = '';
+                       $.each(data, function (key, item) {
+                           html0 += '<option value=' + item.id + '>' + item.unit + '</option>';
+                       });
+                       $("#Item").html(html0);
+                       var html1 = '';
+                       $.each(data, function (key, item) {
+                           html1 += '<option value=' + item.id + '>' + item.exchange + '</option>';
+                       });
+                       $("#ex").html(html1);
+                       var html2 = '';
+                       $.each(data, function (key, item) {
+                           html2 += '<option value=' + item.id + '>' + item.MaNCKH + '</option>';
+                       });
+                       $("#nckh").html(html2);
+                       var html3 = '';
+                       $.each(data, function (key, item) {
+                           html3 += '<option value=' + item.ResearchCategory.id + '>' + item.ResearchCategory.Name + '</option>';
+                       });
+                       $("#dm").html(html3);
+
+                   } else {
+                       var html = '';
+                       html += '<option value="">--Không có loại hàng phù hợp--</option>';
+                       $("").html(html);
+                   }
+               })
+
+           })
+            $("#nd").change(function () {
+                $.get("/Research/GetList/" + $("#nd").val(), function (data) {
+                    if(data != null &&  data != undefined && data.length){
+                        var html0 = '';
+                        $.each(data, function (key, item) {
+                            html0 += '<option value=' + item.id + '>' + item.unit+ '</option>';
+                        });
+                        $("#Item").html(html0);
+                        var html1 = '';
+                        $.each(data, function (key, item) {
+                            html1 += '<option value=' + item.id + '>' + item.exchange + '</option>';
+                        });
+                        $("#ex").html(html1);
+                        var html2 = '';
+                        $.each(data, function (key, item) {
+                            html2 += '<option value=' + item.id + '>' + item.MaNCKH + '</option>';
+                        });
+                        $("#nckh").html(html2);
+                        var html3 = '';
+                        $.each(data, function (key, item) {
+                            html3 += '<option value=' + item.ResearchCategory.id + '>' + item.ResearchCategory.Name + '</option>';
+                        });
+                        $("#dm").html(html3);
+
+                    } else {
+                        var html = '';
+                        html += '<option value="">--Không có loại hàng phù hợp--</option>';
+                        $("#Item").html(html);
+                    }
+                })
+
+            })
+            $("#ten").change(function () {
+                $.get("/Research/GetListAC/" + $("#ten").val(), function (data) {
+                    if (data != null && data != undefined && data.length) {
+                        var html0 = '';
+                        $.each(data, function (key, item) {
+                            html0 += '<option value=' + item.id + '>' + item.Teaching_Name + '</option>';
+                        });
+                        $("#tc").html(html0);
+                        var html1 = '';
+                        $.each(data, function (key, item) {
+                            html1 += '<option value=' + item.id + '>' + item.Degree + '</option>';
+                        });
+                        $("#td").html(html1);
+                        var html2 = '';
+                        $.each(data, function (key, item) {
+                            html2 += '<option value=' + item.id + '>' + item.Lecture_Code + '</option>';
+                        });
+                        $("#ma").html(html2);
+                        //var html3 = '';
+                        //$.each(data, function (key, item) {
+                        //    html3 += '<option value=' + item.ResearchCategory.id + '>' + item.ResearchCategory.Name + '</option>';
+                        //});
+                        //$("#dm").html(html3);
+
+                    } else {
+                        var html = '';
+                        html += '<option value="">--Không có loại hàng phù hợp--</option>';
+                        $("#Item").html(html);
+                    }
+                })
+
+            })
+            $("#ma").change(function () {
+                $.get("/Research/GetListAC/" + $("#ma").val(), function (data) {
+                    if (data != null && data != undefined && data.length) {
+                        var html0 = '';
+                        $.each(data, function (key, item) {
+                            html0 += '<option value=' + item.id + '>' + item.Teaching_Name + '</option>';
+                        });
+                        $("#tc").html(html0);
+                        var html1 = '';
+                        $.each(data, function (key, item) {
+                            html1 += '<option value=' + item.id + '>' + item.Degree + '</option>';
+                        });
+                        $("#td").html(html1);
+                        var html2 = '';
+                        $.each(data, function (key, item) {
+                            html2 += '<option value=' + item.id + '>' + item.Name + '</option>';
+                        });
+                        $("#ten").html(html2);
+                        //var html3 = '';
+                        //$.each(data, function (key, item) {
+                        //    html3 += '<option value=' + item.ResearchCategory.id + '>' + item.ResearchCategory.Name + '</option>';
+                        //});
+                        //$("#dm").html(html3);
+
+                    } else {
+                        var html = '';
+                        html += '<option value="">--Không có loại hàng phù hợp--</option>';
+                        $("#Item").html(html);
+                    }
+                })
+
+            })
+        });
+</script>
+    }
+

@@ -1,0 +1,72 @@
+﻿@model SEP2020.Models.Research
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">Xóa NCKH</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Explain)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Explain)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Note)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Account.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Account.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RearchItem.CT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RearchItem.CT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semester.namesemester)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semester.namesemester)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-danger" /> |
+            @Html.ActionLink("Quay trở lại", "Index")
+        </div>
+    }
+</div>

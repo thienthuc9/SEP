@@ -1,0 +1,52 @@
+﻿@model IEnumerable<SEP2020.Models.Faculty>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">DANH SÁCH KHOA</h2>
+
+<p>
+    @Html.ActionLink("+ Tạo Khoa mới", "Create")
+</p>
+<div class="card mb-3">
+    <div class="card-header">
+        <i class="fa fa-table"></i> Danh sách KHOA
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="demoGrid" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Tên KHOA</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+
+                            @*<td>
+                                    @Html.DisplayFor(modelItem => item.id_FKAccount)
+                                </td>*@
+                            <td>
+                                @Html.ActionLink("Sửa", "Edit", new { id = item.id })
+
+                                @Html.ActionLink("Xóa", "Delete", new { id = item.id })
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+   

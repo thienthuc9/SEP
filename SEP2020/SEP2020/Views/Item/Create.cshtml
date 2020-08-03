@@ -1,0 +1,116 @@
+﻿@model SEP2020.Models.RearchItem
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">Tạo mới NCKH</h2>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script> 
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+       
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Category_id, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Category_id", new SelectList(ViewBag.ResearchCategories, "id", "Name"))
+                @Html.ValidationMessageFor(model => model.Category_id)
+            </div>
+        </div>
+        <div class="form-group">
+           <p style="margin-left:18px">Mã</p>
+            <div class="col-md-10">
+                @Html.DropDownList("Category_id", new SelectList(ViewBag.ResearchCategories, "id", "Ma"), new { @id = "Item", @disabled = "disabled" })
+                @Html.ValidationMessageFor(model => model.Category_id)
+            </div>
+        </div>
+        @*<div class="form-group">
+            @Html.LabelFor(model => model.Category_id, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("Category_id", new SelectList(ViewBag.ResearchCategories, "id", "Ma"))
+                @Html.ValidationMessageFor(model => model.Category_id)
+            </div>
+        </div>*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaNCKH, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-2">
+                @Html.EditorFor(model => model.MaNCKH, new { htmlAttributes = new { @class = "form-control",} })
+                @Html.ValidationMessageFor(model => model.MaNCKH, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CT, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-7">
+                @Html.EditorFor(model => model.CT, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CT, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.unit, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-2">
+                @Html.EditorFor(model => model.unit, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.unit, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.exchange, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-2">
+                @Html.EditorFor(model => model.exchange, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.exchange, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.about, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-7">
+                @Html.EditorFor(model => model.about, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.about, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+      
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Tạo" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+   
+}
+
+<div>
+    @Html.ActionLink("Quay lại danh sách", "Index")
+</div>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $("#Category_id").change(function () {
+                $.get("/Item/GetList/"+$("#Category_id").val(), function (data) {
+                    if(data != null &&  data != undefined && data.length){
+                        var html = '';
+                        $.each(data, function (key, item) {
+                            html += '<option value=' + item.id + '>' + item.Ma+ '</option>';
+                        });
+                        $("#Item").html(html);
+
+                    } else {
+                        var html = '';
+                        html += '<option value="">--Không có loại hàng phù hợp--</option>';
+                        $("#Item").html(html);
+                    }
+                })
+
+            })
+        })
+</script>}

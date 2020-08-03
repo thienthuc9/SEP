@@ -1,0 +1,42 @@
+﻿@model SEP2020.Models.ResearchCategory
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/SEPlayout.cshtml";
+}
+
+<h2 style="text-align:center">Xóa Danh Mục NCKH</h2>
+
+
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ma)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ma)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.Raw(TempData["msg"])
+
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-danger" /> <br /><br />
+            @Html.ActionLink("Quay lại danh sách", "Index")
+        </div>
+    }
+</div>
